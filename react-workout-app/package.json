@@ -1,0 +1,41 @@
+{
+  "name": "react-workout-app",
+  "version": "1.0.0",
+  "description": "Приложение для тренировок",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node back/server",
+    "server": "nodemon back/server",
+    "client": "npm run start --prefix front",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Damfler/react-workout-app.git"
+  },
+  "author": "Damfler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Damfler/react-workout-app/issues"
+  },
+  "homepage": "https://github.com/Damfler/react-workout-app#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.11",
+    "node-sass": "^6.0.1",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^6.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13"
+  }
+}
